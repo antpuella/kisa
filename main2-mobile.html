@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIST 발전기금 시안2-메인(모바일)</title>
+</head>
+<style>
+  html, body, * {
+    padding: 0;
+    margin: 0;
+  }
+  .mobile {
+    width: 440px; height: 910px; overflow: auto;
+    position: relative; padding-right: 20px; margin: 0 auto; margin-top: 20px;
+    border-radius: 95px;
+  }
+  .mockupImg, .mobileImg { width: 100%; }
+  .mockupImg {
+    position: fixed; top: 10px; width: 450px; z-index: 100;
+  }
+  .mockupImg img { width: 450px; height: 940px; }
+  .mobileImg img { width: 405px; border: 1px solid green; }
+  .mobileImg {
+    position: absolute; top: 0px; left:20px;  width: 405px;
+  }
+
+  .mobile::-webkit-scrollbar{
+      width: 14px;
+  }
+  .mobile::-webkit-scrollbar-thumb{
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 10px; 
+  }
+  .mobile::-webkit-scrollbar-track{
+      background-color: rgba(0,0,0,0);
+  }
+
+</style>
+<body>
+  <div class="mobile">
+    <div class="mockupImg"><img src="./mockup.png" alt=""></div>
+    <div class="mobileImg"><img src="./draft2/main2Mobile.png" alt="" class="moImg"></div>
+  </div>
+</body>
+</html>
